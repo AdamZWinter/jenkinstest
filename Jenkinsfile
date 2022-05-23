@@ -1,4 +1,4 @@
-Jenkinsfile (Declarative Pipeline)
+//Jenkinsfile (Declarative Pipeline)
 pipeline {
     agent { docker { image 'php:8.1.4-alpine' } }
     stages {
