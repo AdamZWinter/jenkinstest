@@ -1,5 +1,6 @@
 //Jenkinsfile (Declarative Pipeline)
 pipeline {
+    echo 'Starting pipeline.'
     agent none
     stages {
         stage('build') {
