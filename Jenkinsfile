@@ -1,9 +1,8 @@
 //Jenkinsfile (Declarative Pipeline)
 pipeline {
-    agent 'Built-In Node'
+    agent { docker { image 'php:8.1.4-alpine' } }
     stages {
         stage('build') {
-            agent { docker { image 'php:8.1.4-alpine' } }
             steps {
                 sh 'php --version'
                 sh 'echo test'
